@@ -1,18 +1,4 @@
-# Lab 1 - Calculator Gradle
-
-## Objective
-
-Build and package a Java calculator application using Gradle.
-
-## Tasks
-
-- Install Java 17
-- Install Gradle
-- Clone the project
-- Run unit tests
-- Build the application
-- Generate the JAR file
-- Run the application
+# Calculator Gradle - Lab 1
 
 ## Commands
 
@@ -21,25 +7,19 @@ gradle test
 gradle build
 java -jar build/libs/calculator.jar
 ```
+
 ## Java & Gradle Version
 
-![Java and]
-
-## Unit Test
-
-![Unit Test](screenshots/03-unit-test.png)
+![Java & Gradle Version](screenshots/01-java-gradle-version.png)
 
 ---
 
-## Build Success
+## Unit Test & Build Success
 
-![Build Success](screenshots/04-build-success.png)
-## Generated JAR
-
-![Generated JAR](screenshots/05-jar-created.png)
+![Unit Test & Build Success](screenshots/03-unit-test-04-build-success.png)
 
 ---
 
-## Application Running
+## Generated JAR & Application Running
 
-![Application Running](screenshots/06-app-running.png)
+![Generated JAR & Application Running](screenshots/05-jar-created-06-app-running.png)
