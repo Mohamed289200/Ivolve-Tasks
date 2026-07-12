@@ -61,8 +61,6 @@ EXPOSE 8080
 CMD ["python", "app.py"]
 ```
 
-![Dockerfile](screenshots/08-dockerfile.png)
-
 ---
 
 # Build Docker Image
