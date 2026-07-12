@@ -1,107 +1,109 @@
-# Ivolve Tasks
+# 🚀 About This Repository
 
-This repository contains my hands-on labs completed during the **iVolve Cloud DevOps Accelerator Program**.
+This repository documents my practical journey through the **Ivolve Cloud DevOps Accelerator Program**, where I complete hands-on labs covering modern DevOps tools and cloud technologies.
 
-## Repository Structure
+Each lab is implemented from scratch, documented with detailed explanations, execution steps, screenshots, and Git version control to simulate real-world engineering workflows.
 
-```
-Ivolve-Tasks/
-├── Build-Tools/
-│   ├── calculator-gradle/
-│   └── calculator-maven/
-│
-└── Docker/
-    ├── Docker-1/
-    ├── Docker-2/
-    ├── Docker-3/
-    └── Docker-4/
-```
+The goal of this repository is not only to complete training tasks but also to build a professional portfolio demonstrating practical experience in software development, containerization, networking, and cloud-native technologies.
 
 ---
 
-# Build Tools
+# 🎯 What Has Been Covered
 
-## Lab 1 – Building and Packaging Java Application with Gradle
+### 🔨 Build Tools
 
-- Install Gradle
-- Run Unit Tests
-- Build the application
-- Generate JAR artifact
-- Run the application
-
-📂 **Project:** `Build-Tools/calculator-gradle`
+- Building Java applications using **Gradle**
+- Building Java applications using **Maven**
+- Running Unit Tests
+- Packaging executable JAR files
+- Project dependency management
 
 ---
 
-## Lab 2 – Building and Packaging Java Application with Maven
+### 🐳 Docker Fundamentals
 
-- Install Maven
-- Run Unit Tests
-- Build the application
-- Generate JAR artifact
-- Run the application
-
-📂 **Project:** `Build-Tools/calculator-maven`
-
----
-
-# Docker
-
-## Lab 3 – Spring Boot Application with Maven Image
-
-- Build Spring Boot application inside Docker
-- Maven + Java 17
-- Run and test the container
-
-📂 **Project:** `Docker/Docker-1`
+- Creating Docker Images
+- Writing Dockerfiles
+- Managing Containers
+- Image Optimization
+- Multi-stage Docker Builds
+- Environment Variables
+- Docker Volumes
+- Bind Mounts
+- Custom Docker Networks
+- Multi-container Communication
 
 ---
 
-## Lab 4 – Java Runtime Image
+### 🌐 Container Networking
 
-- Build application locally
-- Run using Java Runtime image
-- Smaller Docker image
-
-📂 **Project:** `Docker/Docker-2`
-
----
-
-## Lab 5 – Multi-Stage Docker Build
-
-- Multi-stage Docker build
-- Builder image (Maven)
-- Runtime image (Java 17)
-- Optimized image size
-
-📂 **Project:** `Docker/Docker-3`
+- Docker Bridge Networks
+- Custom Networks
+- Service Discovery
+- Container-to-Container Communication
+- Network Isolation
+- Microservices Connectivity
 
 ---
 
-## Lab 6 – Docker Environment Variables
+### 📑 Documentation
 
-- Runtime variables using `-e`
-- Environment variables using `--env-file`
-- Default variables using `ENV`
+Every lab contains:
 
-📂 **Project:** `Docker/Docker-4`
+- Detailed README
+- Execution Steps
+- Commands Used
+- Screenshots
+- Results
+- Git History
 
 ---
 
-# Technologies Used
+# 🛠 Technologies
 
-- Java 17
-- Gradle
-- Maven
-- Spring Boot
+- Java
 - Python
 - Flask
+- Gradle
+- Maven
 - Docker
+- Docker Compose
+- Docker Networking
+- Docker Volumes
+- Git
+- GitHub
 
 ---
 
-## Author
+# 📈 Learning Progress
 
-**Mohamed Abdelhamed**
+| Module | Status |
+|---------|--------|
+| Build Tools | ✅ Completed |
+| Docker Fundamentals | ✅ Completed |
+| Docker Networking | ✅ Completed |
+| Kubernetes | ⏳ In Progress |
+| Jenkins | ⏳ Coming Soon |
+| Terraform | ⏳ Coming Soon |
+| Ansible | ⏳ Coming Soon |
+| AWS | ⏳ Coming Soon |
 
-Cloud DevOps Accelerator Program
+---
+
+# 💡 Repository Highlights
+
+✔ Hands-on DevOps Labs
+
+✔ Production-style Dockerfiles
+
+✔ Microservices Networking
+
+✔ Persistent Storage with Docker Volumes
+
+✔ Build Automation using Maven & Gradle
+
+✔ Professional Documentation
+
+✔ Git Version Control
+
+✔ Real-world Development Workflow
