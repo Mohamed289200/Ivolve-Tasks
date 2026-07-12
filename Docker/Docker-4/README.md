@@ -1,18 +1,12 @@
 # Lab 6 - Managing Docker Environment Variables Across Build and Runtime
 
-## 📌 Objective
+## Objective
 
-This lab demonstrates different ways to configure environment variables for a Dockerized Flask application.
-
-Three methods are covered:
-
-- Passing variables using the `-e` option.
-- Passing variables using an `--env-file`.
-- Defining variables inside the Dockerfile using `ENV`.
+This lab demonstrates three different ways to pass environment variables to a Dockerized Flask application.
 
 ---
 
-# 🛠 Technologies
+## Technologies
 
 - Python 3.11
 - Flask
@@ -20,29 +14,7 @@ Three methods are covered:
 
 ---
 
-# 📁 Project Structure
-
-```text
-Docker-4/
-├── Dockerfile
-├── app.py
-├── staging.env
-├── screenshots/
-│   ├── 01-docker-build.png
-│   ├── 02-development-env.png
-│   ├── 03-staging-env.png
-│   ├── 04-production-env.png
-│   ├── 05-docker-ps.png
-│   ├── 06-docker-logs.png
-│   ├── 07-cleanup.png
-│   ├── 08-dockerfile.png
-│   └── 09-env-file.png
-└── README.md
-```
-
----
-
-# Dockerfile
+## Dockerfile
 
 ```dockerfile
 FROM python:3.11-slim
@@ -63,7 +35,7 @@ CMD ["python", "app.py"]
 
 ---
 
-# Build Docker Image
+## Build Docker Image
 
 ```bash
 docker build -t flask-app .
@@ -73,70 +45,66 @@ docker build -t flask-app .
 
 ---
 
-# Method 1 — Runtime Environment Variables (-e)
-
-Run the container by passing variables directly from the command line.
+## Method 1 - Runtime Variables (-e)
 
 ```bash
-docker run -d \
---name flask-dev \
+docker run -d --name flask-dev \
 -p 8080:8080 \
 -e APP_MODE=development \
 -e APP_REGION=us-east \
 flask-app
 ```
 
-Output:
+**Output**
 
 ```
 App mode: development, Region: us-east
 ```
 
-![Development](screenshots/02-development-env.png)
+![Development Environment](screenshots/02-development-env.png)
 
 ---
 
-# Method 2 — Environment File (--env-file)
+## Method 2 - Environment File
 
-Create a file named **staging.env**
+Create:
 
 ```text
+staging.env
+```
+
+```
 APP_MODE=staging
 APP_REGION=us-west
 ```
 
-![Environment File](screenshots/09-env-file.png)
-
 Run:
 
 ```bash
-docker run -d \
---name flask-stage \
+docker run -d --name flask-stage \
 -p 8081:8080 \
 --env-file staging.env \
 flask-app
 ```
 
-Output:
+**Output**
 
 ```
 App mode: staging, Region: us-west
 ```
 
-![Staging](screenshots/03-staging-env.png)
+![Staging Environment](screenshots/03-staging-env.png)
 
 ---
 
-# Method 3 — Dockerfile ENV
-
-Environment variables are defined directly inside the Dockerfile.
+## Method 3 - Dockerfile ENV
 
 ```dockerfile
 ENV APP_MODE=production
 ENV APP_REGION=canada-west
 ```
 
-Rebuild:
+Build:
 
 ```bash
 docker build -t flask-app-prod .
@@ -145,23 +113,22 @@ docker build -t flask-app-prod .
 Run:
 
 ```bash
-docker run -d \
---name flask-prod \
+docker run -d --name flask-prod \
 -p 8082:8080 \
 flask-app-prod
 ```
 
-Output:
+**Output**
 
 ```
 App mode: production, Region: canada-west
 ```
 
-![Production](screenshots/04-production-env.png)
+![Production Environment](screenshots/04-production-env.png)
 
 ---
 
-# Running Containers
+## Running Containers
 
 ```bash
 docker ps
@@ -171,7 +138,7 @@ docker ps
 
 ---
 
-# Docker Logs
+## Docker Logs
 
 ```bash
 docker logs flask-dev
@@ -181,9 +148,7 @@ docker logs flask-dev
 
 ---
 
-# Cleanup
-
-Stop and remove all containers and images.
+## Cleanup
 
 ```bash
 docker stop flask-dev flask-stage flask-prod
@@ -197,31 +162,18 @@ docker rmi flask-app flask-app-prod
 
 ---
 
-# Result
+## Result
 
-- ✅ Docker image built successfully.
-- ✅ Flask application runs correctly.
-- ✅ Environment variables successfully passed using `-e`.
-- ✅ Environment variables successfully loaded using `--env-file`.
-- ✅ Environment variables successfully defined using `ENV`.
-- ✅ All containers tested successfully.
-- ✅ Environment cleaned successfully.
-
----
-
-# Key Learning
-
-This lab demonstrates three different approaches for managing environment variables in Docker:
-
-| Method | Use Case |
-|---------|----------|
-| `-e` | Quick runtime configuration |
-| `--env-file` | Store multiple variables in a separate file |
-| `ENV` | Define default values inside the Docker image |
+- ✅ Successfully built the Docker image.
+- ✅ Successfully configured runtime environment variables using `-e`.
+- ✅ Successfully configured environment variables using `--env-file`.
+- ✅ Successfully configured default environment variables using `ENV`.
+- ✅ Successfully tested all three deployment methods.
+- ✅ Successfully cleaned up containers and images.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Mohamed Abdelhamed**
 
