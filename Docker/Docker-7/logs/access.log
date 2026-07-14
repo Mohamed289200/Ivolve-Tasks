@@ -1,0 +1,6 @@
+172.23.0.1 - - [14/Jul/2026:08:45:46 +0000] "GET / HTTP/1.1" 200 2769 "-" "curl/7.81.0"
+172.23.0.1 - - [14/Jul/2026:08:46:10 +0000] "GET / HTTP/1.1" 200 2769 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.23.0.1 - - [14/Jul/2026:08:46:10 +0000] "GET /assets/ivolve-logo.png HTTP/1.1" 200 100268 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.23.0.1 - - [14/Jul/2026:08:46:10 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+172.23.0.1 - - [14/Jul/2026:08:46:45 +0000] "GET /health HTTP/1.1" 200 59 "-" "curl/7.81.0"
+172.23.0.1 - - [14/Jul/2026:08:46:56 +0000] "GET /ready HTTP/1.1" 200 51 "-" "curl/7.81.0"
