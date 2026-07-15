@@ -1,109 +1,181 @@
-# 🚀 About This Repository
+# 🚀 Ivolve-Tasks
 
-This repository documents my practical journey through the **Ivolve Cloud DevOps Accelerator Program**, where I complete hands-on labs covering modern DevOps tools and cloud technologies.
+![GitHub last commit](https://img.shields.io/github/last-commit/Mohamed289200/Ivolve-Tasks)
+![GitHub repo size](https://img.shields.io/github/repo-size/Mohamed289200/Ivolve-Tasks)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?logo=apachemaven&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white)
 
-Each lab is implemented from scratch, documented with detailed explanations, execution steps, screenshots, and Git version control to simulate real-world engineering workflows.
+A comprehensive hands-on repository documenting my progress throughout the **iVolve Cloud & DevOps Accelerator Program**.
 
-The goal of this repository is not only to complete training tasks but also to build a professional portfolio demonstrating practical experience in software development, containerization, networking, and cloud-native technologies.
+This repository contains practical labs covering modern DevOps technologies including **Build Tools, Docker, Kubernetes, CI/CD, Infrastructure Automation, and Cloud Engineering**.
 
----
-
-# 🎯 What Has Been Covered
-
-### 🔨 Build Tools
-
-- Building Java applications using **Gradle**
-- Building Java applications using **Maven**
-- Running Unit Tests
-- Packaging executable JAR files
-- Project dependency management
+Each lab is implemented from scratch with complete source code, configuration files, screenshots, and detailed documentation.
 
 ---
 
-### 🐳 Docker Fundamentals
+# 📚 Repository Structure
 
-- Creating Docker Images
-- Writing Dockerfiles
-- Managing Containers
-- Image Optimization
-- Multi-stage Docker Builds
-- Environment Variables
-- Docker Volumes
-- Bind Mounts
-- Custom Docker Networks
-- Multi-container Communication
-
----
-
-### 🌐 Container Networking
-
-- Docker Bridge Networks
-- Custom Networks
-- Service Discovery
-- Container-to-Container Communication
-- Network Isolation
-- Microservices Connectivity
-
----
-
-### 📑 Documentation
-
-Every lab contains:
-
-- Detailed README
-- Execution Steps
-- Commands Used
-- Screenshots
-- Results
-- Git History
+```text
+Ivolve-Tasks
+│
+├── Build-Tools
+│   ├── calculator-gradle
+│   └── calculator-maven
+│
+├── Docker
+│   ├── Docker-1
+│   ├── Docker-2
+│   ├── Docker-3
+│   ├── Docker-4
+│   ├── Docker-5
+│   ├── Docker-6
+│   └── Docker-7
+│
+├── Kubernetes
+│   ├── Kubernetes-1
+│   └── Kubernetes-2
+│
+└── README.md
+```
 
 ---
 
 # 🛠 Technologies
 
-- Java
-- Python
-- Flask
+### Build Tools
+
 - Gradle
 - Maven
+
+### Containerization
+
 - Docker
 - Docker Compose
-- Docker Networking
+- Multi-stage Builds
 - Docker Volumes
+- Environment Variables
+- Multi-container Applications
+
+### Container Orchestration
+
+- Kubernetes
+- Kind
+- kubectl
+- Namespaces
+- Resource Quotas
+- Node Taints
+
+---
+
+# 📖 Completed Labs
+
+## Build Tools
+
+- ✅ Lab 1 - Java Application Build with Gradle
+- ✅ Lab 2 - Java Application Build with Maven
+
+---
+
+## Docker
+
+- ✅ Lab 3 - Spring Boot Container (Source Build)
+- ✅ Lab 4 - Spring Boot Container (JAR Build)
+- ✅ Lab 5 - Multi-stage Docker Build
+- ✅ Lab 6 - Docker Environment Variables
+- ✅ Lab 7 - Docker Volumes
+- ✅ Lab 8 - Multi-container Communication
+- ✅ Lab 9 - Docker Compose
+
+---
+
+## Kubernetes
+
+- ✅ Lab 10 - Node Isolation Using Taints
+- ✅ Lab 11 - Namespace Management & Resource Quotas
+
+---
+
+# 🎯 Learning Objectives
+
+Throughout these labs I practiced:
+
+- Building Java applications
+- Packaging applications
+- Writing Dockerfiles
+- Creating optimized Docker images
+- Managing Docker containers
+- Using Docker Volumes
+- Building multi-container applications
+- Working with Docker Compose
+- Deploying Kubernetes clusters
+- Managing Kubernetes Nodes
+- Applying Node Taints
+- Creating Namespaces
+- Enforcing Resource Quotas
+
+---
+
+# 🚀 Tools Used
+
+- Ubuntu (WSL2)
+- Docker Engine
+- Docker Compose
+- Kubernetes
+- Kind
+- kubectl
 - Git
 - GitHub
+- Java 17
+- Maven
+- Gradle
+- Node.js
 
 ---
 
-# 📈 Learning Progress
+# 📂 Documentation
 
-| Module | Status |
+Each lab contains:
+
+- Source Code
+- Configuration Files
+- YAML Manifests
+- Dockerfiles
+- Screenshots
+- Step-by-step Documentation
+- README
+
+---
+
+# 📈 Progress
+
+| Section | Status |
 |---------|--------|
 | Build Tools | ✅ Completed |
-| Docker Fundamentals | ✅ Completed |
-| Docker Networking | ✅ Completed |
-| Kubernetes | ⏳ In Progress |
-| Jenkins | ⏳ Coming Soon |
-| Terraform | ⏳ Coming Soon |
-| Ansible | ⏳ Coming Soon |
-| AWS | ⏳ Coming Soon |
+| Docker | ✅ Completed |
+| Kubernetes | 🚧 In Progress |
+| Jenkins | ⏳ Upcoming |
+| Terraform | ⏳ Upcoming |
+| AWS | ⏳ Upcoming |
+| Ansible | ⏳ Upcoming |
 
 ---
 
-# 💡 Repository Highlights
+# 🎓 Program
 
-✔ Hands-on DevOps Labs
+Cloud & DevOps Accelerator Program
 
-✔ Production-style Dockerfiles
+Hands-on Labs covering modern DevOps tools and best practices.
 
-✔ Microservices Networking
+---
 
-✔ Persistent Storage with Docker Volumes
+## 👨‍💻 Author
 
-✔ Build Automation using Maven & Gradle
+**Mohamed Ahmed Abdelhamid**
 
-✔ Professional Documentation
+Computer Engineering Student
 
-✔ Git Version Control
+Cloud & DevOps Trainee
 
-✔ Real-world Development Workflow
+GitHub: https://github.com/Mohamed289200
